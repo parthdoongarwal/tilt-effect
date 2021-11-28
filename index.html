@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>tilt efect</title>
+  </head>
+  <body>
+    <div class="con" data-tilt>
+      <div class="item">
+        <img
+          src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        />
+        <h1>hello</h1>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="tilt.jquery.js"></script>
+    <script>
+      $(".con").tilt({
+        glare: true,
+        maxGlare: 0.5,
+      });
+    </script>
+  </body>
+</html>
